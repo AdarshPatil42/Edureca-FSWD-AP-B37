@@ -1,0 +1,29 @@
+/* using id selector in css */
+#h2tag{
+    font-size: 50px;
+    background-color: darkgrey;
+    border: 2px groove grey;
+    border-bottom: 5px dotted blueviolet;
+    border-radius: 6px;
+    
+    padding: 10px;
+    margin: 5px 0px 0px 0px;
+}
+
+/* universe selector in css ( * = universe) */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* class selector in css(it start from ( . ) */
+.class1{
+    font-weight: bold;
+}
+.container{
+    background-color: aquamarine;
+}
+.header{
+    height: 150px;
+    background-size: cover;
+    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/a2hkMAaruSQ8haQZ4rBL9/8ff4a6f289b9ca3f4e6474f29793a74a/nature-image-for-website.jpg?fit=fill&w=1024&h=683&fm=webp);
+}
