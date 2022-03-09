@@ -1,0 +1,235 @@
+.totaldiv{
+    margin: 0 auto;
+    padding: 0;
+    width: 1366px;
+    height: 1080px;
+}
+
+.heading-img{
+    width: 1366px;
+    height: 480px;
+/* UI Properties */
+    background: transparent linear-gradient(180deg, #f7cfcf00 0%, #4F0707 100%) 0% 0% no-repeat padding-box; 
+    /* mix-blend-mode: multiply; */
+    opacity: 1;
+}
+
+.login{
+    float: right;
+    margin-top: 17px;
+}
+
+.login-text{
+    display: inline-block;
+    width: 43px;
+    height: 23px;
+/* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/25px Poppins;
+    letter-spacing: 0px;
+    color:#FFFFFF;
+    opacity: 1;
+    margin-right:26px;
+}
+
+.ac-button{
+    display: inline-block;
+    width: 181px;
+    height: 46px;
+/* UI Properties */
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    opacity: 1;
+    margin-right: 101px;
+    color: #FFFFFF;
+    background: transparent linear-gradient(180deg, #9D0E0E00 0%, #4F0707 100%) 0% 0% no-repeat padding-box;;
+}
+
+.symbol{
+    width: 147px;
+    height: 147px;
+/* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 600 70px/106px Poppins;
+    letter-spacing: 0px;
+    color: #EB2929;
+    border-radius: 50%;
+    margin-top: 81px;
+    margin-left: 610px;
+    padding-top: 15px;
+}
+
+.heading{
+    width: 758px;
+    height: 51px;
+/* UI Properties */
+    text-align: left;
+    font: normal normal 600 36px/55px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-left: 340px;
+    margin-top: 22px;
+}
+
+.search-1{
+    width: 215px;
+    height: 60px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 340px;
+    padding-left: 20px;
+    float: left;
+}
+
+.search-2{
+    width: 447px;
+    height: 60px;
+/* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-left: 568px;
+    padding-left: 20px;
+}
+
+.content{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.h1tag{
+    width: 239px;
+    height: 43px;
+/* UI Properties */
+    text-align: left;
+    font: normal normal bold 30px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    margin-top: 48px;
+}
+
+.h2tag{
+    width: 331px;
+    height: 25px;
+/* UI Properties */
+    text-align: left;
+    font: normal normal normal 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+    opacity: 1;
+}
+
+.card1{
+    width: 360px;
+    height: 160px;
+    float: left;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+.cardimg1{
+    width: 160px;
+    height: 160px;
+    opacity: 1;
+    float: left;
+}
+
+.cardcontent1{
+    width: 200px;
+    height: 160px;
+}
+
+.card-p1{
+    width: 88px;
+    height: 25px;
+/* UI Properties */
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.card-p2{
+    width: 138px;
+    height: 62px;
+/* UI Properties */
+    text-align: left;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+    opacity: 1;
+}
+#card-x{
+    margin-left: 30px;
+}
+.class-x{
+    margin-top: 212px;
+}
+
+@media screen and (max-width:800px) {
+    .login{
+        margin-right: -380px;
+        margin-top: 17px;
+    }
+    
+    .card{
+        width: 600px;
+    }
+    .symbol{
+        margin-left: 400px;
+    }
+
+    .heading{
+        font-size: 40px;
+        margin-left: 150px;
+    }
+
+    .search-1{
+        float: none;
+        width: 480px;
+        margin-left: 210px;
+    }
+
+    .search-2{
+        width: 480px;
+        height: 80px;
+        margin-left: 210px;
+    }
+
+    .h1tag{
+        font: size 50px;
+        width: 300px; 
+    }
+    .h2tag{
+        font-size: 20px;
+    }
+
+    .card1{
+        float: none;
+        width: 560px;
+        margin-top: 50px;
+    }
+
+    .card-p1{
+        font-size: 28px;
+    }
+    .card-p2{
+        font-size: 22px;
+    }
+
+    #card-x{
+        margin-left: 0px;
+    }
+
+    .class-x{
+        margin-top: 30px;
+    }
+}
