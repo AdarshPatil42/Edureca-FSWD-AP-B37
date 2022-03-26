@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <title>Signup Form</title>
+        <!-- <style>
+            #h2tag{
+                font-size: larger;
+            }
+        </style> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="external ccs-form.css">
+        <script src="dom.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1 style="color: aliceblue;">It is a css practice</h1>
+        </div>
+        
+        <h2 class="title" style="color: coral;">Signup Form</h2>
+        <form class="container" id="signupForm">
+            <fieldset>
+            <!-- Input is self closing tag -->
+            <div>
+                <label name="lblname" for="name">Name :</label>
+                <input type="text" id="inputName" oninput="handleNameChange()">
+                <label class="form-label" id="lblNameField">Value Coming...</label>
+            </div><br>
+            <div>
+                <label class="class1" name="lblemail" for="email">Email Address :</label>
+                <input type="email" name="inputemail">
+            </div><br>
+            <div>
+                <label class="class1" name="lblusername" for="username">User Name :</label>
+                <input type="text" name="inputusername">
+            </div><br>
+            <!-- <div class="mb-3">
+                <label class="class1 form-label"  name="lblpassword" for="password">Password :</label>
+                <input class="form-control" type="password" id="inputpassword" oninput="handlePasswordChange()">
+                <label id="error" style="color: red;"></label>
+            </div><br> -->
+
+            <div class="mb-3">
+                <label class="form-label" name="lblPassword" for="inputPassword">Password</label>
+                <input class="form-control" type="password" id="inputPassword" oninput="handlePasswordChange()">
+                <label id="error" style="color: red;"></label>
+            </div>
+
+            <div>
+                <label name="lbldob" for="dob">Date of Birth :</label>
+                <input type="date" name="inputdob">
+            </div><br>
+            <div>
+                <label name="lblphone" for="phone">Phone :</label>
+                <input type="tel" name="inputphone">
+            </div><br>
+            <div>
+                <label name="lbladdress" for="address">Address :</label>
+                <textarea name="adress" id="address" cols="30" rows="5"></textarea>
+            </div><br>
+        
+
+            <div class="mb-3">
+                <label class="form-label" for="inputGender">Gender</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" onchange="handleGenderChange()">
+                    <label class="form-check-label">Male</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="gender" onchange="handleGenderChange()">
+                    <label class="form-check-label">FeMale</label>
+                </div>
+                <label class="form-label" id="lblGenderField">Value Coming...</label>
+
+            </div>
+
+            <div  style="height: 40px;">
+                <label name="lblupload" for="upload">Upload Resume :</label>
+                <input type="file" name="choose file">
+            </div>
+            <!-- <div style="height: 40px;">
+                <label class="form-label" for="ddlCountry" >Country :</label>
+                <select class="form-select" name="ddlCountry" id="ddlCountry" onchange="handleCountryChange()">
+                    <option value="0">select</option>
+                    <option value="1">India</option>
+                    <option value="2">china</option>
+                    <option value="3">UK</option>
+                    <option value="4">Japan</option>
+                </select>
+                <label class="form-label" id="ddlCountryLable">Value Coming...</label>
+            </div> -->
+
+            <div class="mb-3">
+                <label class="form-label" for="ddlCountry">Country</label>
+                <select class="form-select" name="ddlCountry" id="ddlCountry" onchange="handleCountryChange()">
+                    <option value="0">Select</option>
+                    <option value="1">India</option>
+                    <option value="2">UK</option>
+                    <option value="3">China</option>
+                </select>
+                <label class="form-label" id="ddlCountryLabel">Value Coming...</label>
+            </div>
+
+            <div  style="height: 40px;">
+                <input type="checkbox" name="term">
+                <label>Term & Conditions</label>
+            </div>
+            <div>
+                <input class="btn btn-success" type="button" value="Submit" onclick="handleButtonClick()">
+            </div>
+
+
+        </fieldset> 
+        </form>
+    </body>
+
+
+
+</html>
