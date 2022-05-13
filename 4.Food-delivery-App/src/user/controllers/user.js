@@ -1,8 +1,18 @@
+const User = require("../models/user");
+const repo = require("../repositories/userRepo");
+
 // api/user/resister
-module.exports.register = (req, res)=>{
+module.exports.register = async(req, res)=>{
     // read req.body
-    // db calls
-    res.end("This is register request");
+    // repositotary calls
+    console.log(req.body);
+    const user = new User(req.body.name, req.body.email, req.body.password);
+    const result = await repo.add(user);
+    if(result){
+        return res.end("User is added");
+    }else{
+        return res.end("User failed to add");
+    }
 }
 
 // api/user/login
