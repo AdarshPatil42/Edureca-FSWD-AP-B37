@@ -10,3 +10,14 @@ exports.add = async (restaurant)=>{
     }
     return true;
 }
+
+exports.get = async ()=>{
+    const collection = mongodbConfig.getCollection("Restaurant");
+    try{
+        const results = await collection.find().toArray();
+        return results;
+    }catch(err){
+        console.log(err);
+        return -1;
+    }
+}
