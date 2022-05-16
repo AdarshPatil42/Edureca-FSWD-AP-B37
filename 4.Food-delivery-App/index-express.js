@@ -6,13 +6,14 @@ const mongodb = require("./config/mongodb");
 const bodyParser= require("body-parser");
 
 // step 2: Create server and listen
+
 const server = express();
 server.listen(4400);
 
 // connect to database
 mongodb.connect();
 
-// configure routes
+// configure routescd
 server.use(bodyParser.json());
 server.use("/api/user",userRoutes);
 server.use("/api/restaurant",restaurantRoutes);
