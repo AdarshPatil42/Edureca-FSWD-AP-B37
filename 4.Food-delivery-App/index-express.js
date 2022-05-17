@@ -4,6 +4,7 @@ const userRoutes = require("./src/user/routes/user");
 const restaurantRoutes = require("./src/restaurant/routes/restaurant");
 const mongodb = require("./config/mongodb");
 const bodyParser= require("body-parser");
+const auth = require("./src/middlewares/auth");
 
 // step 2: Create server and listen
 
@@ -16,7 +17,7 @@ mongodb.connect();
 // configure routescd
 server.use(bodyParser.json());
 server.use("/api/user",userRoutes);
-server.use("/api/restaurant",restaurantRoutes);
+server.use("/api/restaurant", auth, restaurantRoutes);
 
 // step 3: create default response
 server.get("/", (req, res)=>{
