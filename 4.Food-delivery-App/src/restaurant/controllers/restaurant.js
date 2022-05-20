@@ -11,6 +11,27 @@ exports.add = async (req, res)=>{
     }
 }
 
+
+exports.update = async (req, res)=>{
+    const restaurant = new Restaurant(req.body.name, req.body.location, req.body.contact, req.body.id);
+    const result = await repo.update(restaurant);
+    if(result){
+        return res.send("Restaurant is updated");
+    }else{
+        return res.send("Failed to updated restaurant");
+    }
+}
+
+exports.delete = async(req, res)=>{
+    const id = req.params.id;
+    const result = await repo.delete(id);
+    if(result){
+        return res.send("Restaurant is Deleted");
+    }else{
+        return res.send("Failed to Delete restaurant");
+    }
+}
+
 exports.get= async (req, res)=>{
     const results = await repo.get();
     if(results==-1){
