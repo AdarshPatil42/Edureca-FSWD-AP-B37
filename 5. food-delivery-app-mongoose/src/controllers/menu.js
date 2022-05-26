@@ -13,6 +13,4 @@ exports.add = async (req, res)=>{
     }
 }
 
-exports.add = async(req, res)=>{
 
-}

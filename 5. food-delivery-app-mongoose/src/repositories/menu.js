@@ -1,4 +1,4 @@
-const Restaurant = require("../models/menu");
+const Menu = require("../models/menu");
 
 exports.add = async (menu)=>{
     try{

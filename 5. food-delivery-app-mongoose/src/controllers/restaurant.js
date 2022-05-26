@@ -13,7 +13,8 @@ exports.add = async (req, res)=>{
 }
 
 exports.get = async (req, res)=>{
-    const result = await repo.get();
+    const page = req.params.page;
+    const result = await repo.get(page);
     if(result){
         res.status(200).send(result);
     }else{
