@@ -1,11 +1,11 @@
 
 import './App.css';
-import Header from './home/Header/Header';
+import Home from './home/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+      <Home />
     </div>
   );
 }

@@ -1,5 +1,8 @@
 const Restaurant = require("../models/restaurant")
 const repo = require("../repositories/restaurant");
+const url = require("url");
+// const { param } = require("../routes/restaurant");
+
 
 exports.add = async (req, res)=>{
     const restaurant = new Restaurant(req.body.name, req.body.location, req.body.contact);
@@ -48,5 +51,25 @@ exports.getByLocation = async (req, res)=>{
         return res.send("Failed to get records");
     }else{
         return res.send(results);
+    }
+}
+
+exports.filter = async (req, res)=>{
+    // step 1: parse query string.
+    const params = url.parse(req.url,true).query;
+    if(!params.name){
+        const results = await repo.getByLocation(params.location);
+        if(results==-1){
+            return res.send("Failed to get records");
+        }else{
+            return res.send(results);
+        }
+    }else{
+        const results = await repo.filter (params.name, params.location)
+        if(results==-1){
+            return res.send("Failed to get records");
+        }else{
+            return res.send(results);
+        }
     }
 }

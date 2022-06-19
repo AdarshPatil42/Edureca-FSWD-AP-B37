@@ -64,3 +64,14 @@ exports.getByLocation = async (_location)=>{
         return -1;
     }
 }
+
+exports.filter = async (name, location)=>{
+    const collection = mongodbConfig.getCollection("Restaurant");
+    const results = await collection.find({
+        $and: [
+            {name: {$regex: name}},
+            {location: location}
+        ]
+    }).toArray();
+    return results;
+}
