@@ -1,6 +1,6 @@
 const User = require("../models/user");
 const repo = require("../repositories/userRepo");
-// const jwt = require("jsonwebtoken");
+const jwt = require("jsonwebtoken");
 
 // api/user/resister
 module.exports.register = async(req, res)=>{

@@ -63,9 +63,9 @@ exports.filter = async (req, res)=>{
             return res.send("Failed to get records");
         }else{
             return res.send(results);
-        }
+        } 
     }else{
-        const results = await repo.filter (params.name, params.location)
+        const results = await repo.filter (params.name, params.location);
         if(results==-1){
             return res.send("Failed to get records");
         }else{

@@ -31,7 +31,8 @@ function Home(){
 
     return(
         <div>
-            <Header locationChange={(event)=>filter('location', event)}
+            <Header 
+            locationChange={(event)=>filter('location', event)}
             nameChange={(event)=> filter('name', event)} />
         </div>
     )

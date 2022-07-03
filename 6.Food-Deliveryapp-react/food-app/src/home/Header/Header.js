@@ -1,11 +1,10 @@
 import './Header.css';
 
 function Header({locationChange, nameChange}){
-
     return(
         <div className="header">
             <div className="header-form">
-            <select onchange={(event)=>{locationChange(event.target.value)}} className="form-control form-select">
+            <select onChange={(event)=>{locationChange(event.target.value)}} className="form-control form-select">
                 <option>Select</option>
                 <option value="Mumbai">Mumbai</option>
                 <option value="Pune">Pune</option>
