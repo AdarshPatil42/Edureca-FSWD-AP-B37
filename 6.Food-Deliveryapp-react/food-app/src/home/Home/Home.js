@@ -1,8 +1,12 @@
 
 import Header from "../Header/Header";
+import {useState} from "react";
+import RestaurantCard from "../RestaurantCard/RestaurantCard";
+
 
 function Home(){
 
+    var [restaurants, setRestaurants] = useState([]);
     let location;
     let name;
 
@@ -24,18 +28,30 @@ function Home(){
         if(name){
             url=url+"&name="+name;
         }
-        fetch(url)
+        fetch(url) 
             .then(res=> res.json())
-            .then((res)=>{console.log(res)});
+                .then((res)=>{
+                    setRestaurants(res);
+                    console.log(restaurants.length);
+                });
     }
 
     return(
         <div>
             <Header 
-            locationChange={(event)=>filter('location', event)}
-            nameChange={(event)=> filter('name', event)} />
+            locationChange={(event)=>filter("location", event)}
+            nameChange={(event)=> filter("name", event)} />
+            
+            
+            {
+                restaurants.length>0 &&
+                    restaurants.map(r=>
+                        <RestaurantCard item={r}/>
+                    )                
+                
+            }
         </div>
     )
 }
 
-export default Home
+export default Home;
