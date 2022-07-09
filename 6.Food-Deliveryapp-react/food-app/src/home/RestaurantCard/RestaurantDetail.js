@@ -7,7 +7,7 @@ function RestaurantDetail() {
 
     var [restaurant, setRestaurant] = useState();
     // 1. read the id form url params.
-    const { id } = useParams();
+    const {id} = useParams();
 
 
     useEffect(() => {
