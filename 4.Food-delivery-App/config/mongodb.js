@@ -4,8 +4,8 @@ const mongodb = require("mongodb");
 
 const mongoDbClient = mongodb.MongoClient;
 
+// const url = "mongodb+srv://AdarshPatil042:Apwd5342@cluster0.zk9iz.mongodb.net/FooddeliveryApp?retryWrites=true&w=majority";
 const url = "mongodb+srv://AdarshPatil042:Apwd5342@cluster0.zk9iz.mongodb.net/FooddeliveryApp?retryWrites=true&w=majority";
-
 
 var client;
 

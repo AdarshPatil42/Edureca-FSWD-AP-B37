@@ -1,9 +1,9 @@
 
 
 .card{
-    padding: 24px;
+    padding: 14px;
     height: 180px;
-    width: 850px;
+    width: 980px;
     border: 1ps solid lightcyan;
     margin: 12px auto;
 }
