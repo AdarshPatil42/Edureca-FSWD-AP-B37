@@ -15,7 +15,7 @@ import Banner from './components/Banner.js';
 import Footer from './components/Footer.js';
 import Signin from './components/Signin.js';
 import Signup from './components/Signup.js';
-
+import Contactus from './components/Contactus.js';
 
 
 function App() {
@@ -24,9 +24,10 @@ function App() {
     <Router>
       <PreNavbar/>
       <Routes>
-        <Route exact path="/signin" element ={<Signin/>}/>
-        <Route exact path="/signup" element ={<Signup/>}/> 
+        <Route  path="/signup" element ={<Signup/>}/> 
+        <Route  path="/signin" element ={<Signin/>}/>
       </Routes>
+
       <Navbar/> 
       <Slider start={data.banner.start}/>
       <Offers offer={data.offer}/> 
@@ -48,6 +49,7 @@ function App() {
       <Videos videos={data.videos}/>
       <Heading text="IN THE PRESS"/>
       <Banner banner={data.banner}/>
+      <Contactus/>
       <Footer footer={data.footer}/>
     </Router>  
   );

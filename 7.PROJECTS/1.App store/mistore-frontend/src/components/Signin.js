@@ -1,13 +1,17 @@
 
 import React, { useState } from 'react'
-import "../styles/Signin.css";
+import "../styles/Signup.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import socialimg from '../img/social-0.jpg';
 
 function Signin() {
-    const [password,setPassword]=useState("")
-    const [email,setEmail]=useState("")
+    const [password,setPassword]=useState("");
+    const [email,setEmail]=useState("");
 
     async function login(event){
         event.preventDefault();
+
+        
 
         const result = await fetch("http://localhost:4000/api/user/signin",{
             method:"POST",
@@ -20,6 +24,7 @@ function Signin() {
         const data = await result.json();
             if(data.user){
                 alert("Congratualation..! You are successfully Login.");
+                
             }else{
                 alert("Enable to login..! Please check your Email and Password.");
             }
@@ -28,16 +33,18 @@ function Signin() {
     }
 
     return (
-        <div>
-            <div>
-            <img id='milogo' src="https://th.bing.com/th/id/R.75bb4de63fec327e410dabdc2ac71a14?rik=3IYTKgbm34Hung&riu=http%3a%2f%2fu01.appmifile.com%2fimages%2f2018%2f10%2f10%2f2e43b73d-b5f9-4da8-a4eb-3496600437e6.png&ehk=A9bnUnCAEkUZPCGUR9oqNaOxaBv0CzktDuWit08lRj4%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt='logo'></img>
+        <div className='body container'>
+            <form className='form' onSubmit={login}>
+            <div className='heading mb-3'>
+            <img id='mi_logo' src="https://mk0bfsieletsonlt96u6.kinstacdn.com/wp-content/uploads/2018/05/mi-logo-e1527492959558.png" alt='logo'></img>
                 <h1 >Mi Account</h1>
             </div>
-            <form onSubmit={login}>
                 <h2>Sign In</h2>
-                <div>
+                <div className='mb-3'>
+                <label  className="form-label" name="lblemail" for="email">Email Address :</label>
                 <input
                     placeholder="Enter Your Email"
+                    className="form-control"
                     type="email"
                     value={email}
                     onChange={(event)=>setEmail(event.target.value)}
@@ -45,10 +52,12 @@ function Signin() {
                     id="email"
                 />
                 </div>
-                <div>
-                <br></br>
+
+                <div className='mb-3'>
+                <label  className="form-label"  name="lblpassword" for="password">Password :</label>
                 <input
                     placeholder="Enter Your Password"
+                    className="form-control"
                     type="password"
                     value={password}
                     onChange={(event)=>setPassword(event.target.value)}
@@ -56,9 +65,13 @@ function Signin() {
                     id="password"
                 />
                 </div>
-                <br></br>
-                <div>
-                <input type="submit" value="Sign In" />
+
+                <div className='mb-3'>
+                <input className="form-control btn btn-primary" type="submit" value="Sign In" />
+                </div>
+
+                <div className="mb-3">
+                <img src={socialimg} className="socialImg"  alt=""/>
                 </div>
             </form>
         </div>

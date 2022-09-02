@@ -6,6 +6,7 @@ const cors = require("cors");
 
 // create server
 const server = express();
+
 server.listen(4000);
 server.use(cors());
 server.use(express.json());
@@ -17,7 +18,7 @@ mongodb.localconnect();
 server.use(bodyParser.json());
 server.use("/api/user", userRouter);
 
-// creaye default response
+// create default response
 server.get("/", (req, res)=>{
     res.end("Hello world");
 });

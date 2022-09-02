@@ -38,3 +38,14 @@ module.exports.signin = async (req, res)=>{
     }
     
 }
+
+// contactus 
+module.exports.contactus = async (req, res)=>{
+    const User = new user(req.body.name, req.body.email, req.body.password, req.body.message);
+    const result = await repo.add(User);
+    if(result){
+        return res.json({status: 'ok'});
+    }else{
+        return res.json({status: 'error', error});
+    }
+}
