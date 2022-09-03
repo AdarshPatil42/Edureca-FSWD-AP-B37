@@ -29,7 +29,8 @@ function Signin() {
                 alert("Enable to login..! Please check your Email and Password.");
             }
         console.log (data);
-        
+        setPassword([]);
+        setEmail([]);
     }
 
     return (

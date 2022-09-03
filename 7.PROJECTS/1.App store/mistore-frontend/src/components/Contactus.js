@@ -30,7 +30,9 @@ function Contactus (){
             alert("Message not send, Please Check detail");
         }
         console.log (data);
-        
+        setName([]);
+        setEmail([]);
+        setMessage([]);
     }
 
 return (

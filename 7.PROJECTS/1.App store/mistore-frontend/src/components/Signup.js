@@ -36,7 +36,9 @@ function Signup() {
             alert("Please Enter Valid Email and Password");
         }
         console.log (data);
-        
+        setName([]);
+        setPassword([]);
+        setEmail([]);
     }
 
     return (

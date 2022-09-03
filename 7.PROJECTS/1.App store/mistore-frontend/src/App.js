@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Slider from './components/Slider';
 import data from './data/data.json';
+import cartdata from './data/cartData.json';
 import Offers from './components/offers.js';
 import Heading from './components/Heading.js';
 import StarProduct from './components/StarProduct.js';
@@ -17,12 +18,11 @@ import Signin from './components/Signin.js';
 import Signup from './components/Signup.js';
 import Contactus from './components/Contactus.js';
 
-
 function App() {
   return (  
     
     <Router>
-      <PreNavbar/>
+      <PreNavbar />
       <Routes>
         <Route  path="/signup" element ={<Signup/>}/> 
         <Route  path="/signin" element ={<Signin/>}/>
@@ -32,7 +32,7 @@ function App() {
       <Slider start={data.banner.start}/>
       <Offers offer={data.offer}/> 
       <Heading text="STAR PRODUCTS"/>
-      <StarProduct starProduct={data.starProduct}/>
+      <StarProduct starProduct={cartdata.starProduct}/>
       <Heading text="HOT ACCESSORIES"/>
       
       <HotAccessoriesMenu/>
