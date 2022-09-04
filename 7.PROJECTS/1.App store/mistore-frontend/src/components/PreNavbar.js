@@ -20,11 +20,11 @@ function PreNavbar(props) {
             <div>
                 <NavLink  to="/signup" >SIGN UP</NavLink> <span>|</span> 
                 <NavLink  to="/signin" >SIGN IN</NavLink> <span>|</span>
-                <NavLink  to="/" >{cartIcon}  CART <sup>{props.count}</sup></NavLink> <span>|</span>
+                <NavLink  to="" onClick={()=>props.handleShow(true)}>{cartIcon}  CART <sup>{props.count}</sup></NavLink> <span>|</span>
                 
-                {/* <div>{cartIcon}  CART <sup>{props.count}</sup></div> */}
+                {/* <div onClick={()=>props.handleShow(true)}> {cartIcon}  CART <sup>{props.count}</sup></div> */}
                 {/* <a  href=""> {cartIcon}  CART (0)</a><span>|</span> */}
-                <NavLink  to="/" ><i class="zmdi zmdi-home zmdi-hc-3x"></i></NavLink> 
+                <NavLink  to="/" onClick={()=>props.handleShow(false)}><i class="zmdi zmdi-home zmdi-hc-3x"></i></NavLink> 
             </div>
         </div>
     )

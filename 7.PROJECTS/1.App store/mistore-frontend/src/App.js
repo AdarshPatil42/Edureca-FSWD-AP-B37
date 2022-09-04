@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState} from 'react';
 import  PreNavbar from './components/PreNavbar';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
@@ -7,6 +8,7 @@ import data from './data/data.json';
 import cartdata from './data/cartData.json';
 import Offers from './components/offers.js';
 import Heading from './components/Heading.js';
+import CartList from './components/CartList';
 import StarProduct from './components/StarProduct.js';
 import HotAccessoriesMenu from './components/HotAccessoriesMenu.js';
 import HotAccessories from './components/HotAccessories.js';
@@ -19,20 +21,38 @@ import Signup from './components/Signup.js';
 import Contactus from './components/Contactus.js';
 
 function App() {
+
+  const [cart, setCart]= useState([]);
+  const [showCart, setShowCart]= useState(false);
+    const addTOCart = (data)=>{
+        setCart([...cart, {...data, quantity:1}]);
+    }
+
+  const handleShow=(value)=>{
+    setShowCart(value);
+  }
+
   return (  
     
     <Router>
-      <PreNavbar />
+      <PreNavbar count={cart.length} handleShow={handleShow}/>
+      <Navbar/>
+      <Heading text="STAR PRODUCTS"/>
+        {
+          showCart?
+          <CartList cart={cart}/>:
+          <StarProduct starProduct={cartdata.starProduct} addTOCart={addTOCart}/>
+        }
       <Routes>
         <Route  path="/signup" element ={<Signup/>}/> 
         <Route  path="/signin" element ={<Signin/>}/>
       </Routes>
 
-      <Navbar/> 
+      
       <Slider start={data.banner.start}/>
       <Offers offer={data.offer}/> 
-      <Heading text="STAR PRODUCTS"/>
-      <StarProduct starProduct={cartdata.starProduct}/>
+      
+      
       <Heading text="HOT ACCESSORIES"/>
       
       <HotAccessoriesMenu/>
