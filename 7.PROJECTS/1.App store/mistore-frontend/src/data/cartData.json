@@ -1,6 +1,7 @@
 {
     "starProduct": [
         {
+            "id": 1,
             "image": "https://th.bing.com/th/id/OIP.8V3vFn-5bQe8au_Xtj31_AHaHa?pid=ImgDet&rs=1",
             "name": "Mi Smart Band 5",
             "category": "Smart Watch",
@@ -8,6 +9,7 @@
             "price": "2499"
         },
         {
+            "id": 2,
             "image": "https://cdn.shopify.com/s/files/1/0231/3627/2464/products/Mi_Bluetooth_Neckband_Earphones_grande_34ba1c5e-cefe-4f46-8087-9e0ac88199c8_300x.png?v=1605885984",
             "name": "Mi  Bluetooth ",
             "category": "Bluetooth",
@@ -15,6 +17,7 @@
             "price": "1799"
         },
         {
+            "id": 3,
             "image": "https://i01.appmifile.com/webfile/globalimg/in/cms/852D3B1A-4511-EA95-7918-A7FAAAF29DE0.jpg",
             "name": "Redmi Note 11T 5G",
             "category": "Mobile",
@@ -22,6 +25,7 @@
             "price": "6999"
         },
         {
+            "id": 4,
             "image": "https://diamu.com.bd/wp-content/uploads/2020/11/Xiaomi-Mi-Enchen-Boost-Electric-Trimmer.jpg",
             "name": "Trimmer",
             "category": "Trimmer",
@@ -29,6 +33,7 @@
             "price": "500"
         },
         {
+            "id": 5,
             "image": "https://th.bing.com/th/id/OIP.MlKWqoqOq8_1nimyP95wDAHaHa?pid=ImgDet&rs=1",
             "name": "Sport Shoe",
             "category": "Footware",
@@ -36,6 +41,7 @@
             "price": "800"
         },
         {
+            "id": 6,
             "image": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1563264530.44121333.jpg?width=420&height=420",
             "name": "Headphone",
             "category": "Accessories",
@@ -43,6 +49,7 @@
             "price": "1200"
         },
         {
+            "id": 7,
             "image": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1579522145.57632892.jpg?width=420&height=420",
             "name": "Mi Router",
             "category": "Home Applience",
@@ -50,6 +57,7 @@
             "price": "1100"
         },
         {
+            "id": 8,
             "image": "https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1600434881.35114664.jpg?width=420&height=420",
             "name": "Power Bank",
             "category": "Accessories",

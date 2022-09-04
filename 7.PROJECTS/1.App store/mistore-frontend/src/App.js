@@ -32,29 +32,26 @@ function App() {
     setShowCart(value);
   }
 
+  
+
   return (  
     
     <Router>
       <PreNavbar count={cart.length} handleShow={handleShow}/>
       <Navbar/>
+      <Routes>
+        <Route  path="/signup" element ={<Signup/>}/> 
+        <Route  path="/signin" element ={<Signin/>}/>
+      </Routes>
       <Heading text="STAR PRODUCTS"/>
         {
           showCart?
           <CartList cart={cart}/>:
           <StarProduct starProduct={cartdata.starProduct} addTOCart={addTOCart}/>
         }
-      <Routes>
-        <Route  path="/signup" element ={<Signup/>}/> 
-        <Route  path="/signin" element ={<Signin/>}/>
-      </Routes>
-
-      
       <Slider start={data.banner.start}/>
       <Offers offer={data.offer}/> 
-      
-      
       <Heading text="HOT ACCESSORIES"/>
-      
       <HotAccessoriesMenu/>
       <Routes>
         <Route exact path="/music" element ={<HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}/>} />

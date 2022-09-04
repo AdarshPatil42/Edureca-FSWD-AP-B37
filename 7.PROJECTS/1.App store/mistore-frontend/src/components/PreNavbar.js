@@ -10,7 +10,7 @@ const cartIcon = <svg className="temp" xmlns="http://www.w3.org/2000/svg" height
 
 function PreNavbar(props) {
     return (
-        <div className="preNav">
+        <div className="preNav fixed-top">
             <div>
                 <a  href="https://www.mi.com/in/">MI INDIA</a> <span>|</span>
                 <a  href="https://in.event.mi.com/in/install-mi-store">GET MI STORE APP</a> <span>|</span>
@@ -20,10 +20,7 @@ function PreNavbar(props) {
             <div>
                 <NavLink  to="/signup" >SIGN UP</NavLink> <span>|</span> 
                 <NavLink  to="/signin" >SIGN IN</NavLink> <span>|</span>
-                <NavLink  to="" onClick={()=>props.handleShow(true)}>{cartIcon}  CART <sup>{props.count}</sup></NavLink> <span>|</span>
-                
-                {/* <div onClick={()=>props.handleShow(true)}> {cartIcon}  CART <sup>{props.count}</sup></div> */}
-                {/* <a  href=""> {cartIcon}  CART (0)</a><span>|</span> */}
+                <NavLink  to="" onClick={()=>props.handleShow(true)}>{cartIcon}  CART <sup className='sup'>{props.count}</sup></NavLink> <span>|</span>
                 <NavLink  to="/" onClick={()=>props.handleShow(false)}><i class="zmdi zmdi-home zmdi-hc-3x"></i></NavLink> 
             </div>
         </div>

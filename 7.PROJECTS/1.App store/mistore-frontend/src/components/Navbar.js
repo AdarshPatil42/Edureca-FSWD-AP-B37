@@ -12,7 +12,7 @@ const searchIcon = <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox
 
 const Navbar = () => {
     return (
-        <div className='nav'>
+        <div className='nav '>
             
             <div className="logo">
 
