@@ -49,3 +49,16 @@
 .preNav > div > a:hover{
     color: white;
 }
+
+.date_time{
+    width: 150px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 5px;
+    /* color: rgba(180, 180, 180, 0.644); */
+    color: rgb(180, 180, 180);
+}
+.date_time:hover{
+    color: rgb(145, 239, 51);
+    border-color: rgb(243, 81, 81);
+}

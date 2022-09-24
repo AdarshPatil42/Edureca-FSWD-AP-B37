@@ -1,8 +1,11 @@
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import "../styles/Signup.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import socialimg from '../img/social-0.jpg';
+import miLogo from '../img/logo.jpg';
+
+
 
 function Signin() {
     const [password,setPassword]=useState("");
@@ -10,8 +13,6 @@ function Signin() {
 
     async function login(event){
         event.preventDefault();
-
-        
 
         const result = await fetch("http://localhost:4000/api/user/signin",{
             method:"POST",
@@ -37,7 +38,7 @@ function Signin() {
         <div className='body container'>
             <form className='form' onSubmit={login}>
             <div className='heading mb-3'>
-            <img id='mi_logo' src="https://mk0bfsieletsonlt96u6.kinstacdn.com/wp-content/uploads/2018/05/mi-logo-e1527492959558.png" alt='logo'></img>
+            <img id='mi_logo' src={miLogo} alt='logo'></img>
                 <h1 >Mi Account</h1>
             </div>
                 <h2>Sign In</h2>

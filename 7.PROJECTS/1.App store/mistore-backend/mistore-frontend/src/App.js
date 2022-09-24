@@ -38,11 +38,11 @@ function App() {
     
     <Router>
       <PreNavbar count={cart.length} handleShow={handleShow}/>
-      <Navbar/>
       <Routes>
         <Route  path="/signup" element ={<Signup/>}/> 
         <Route  path="/signin" element ={<Signin/>}/>
       </Routes>
+      <Navbar/>
       <Heading text="STAR PRODUCTS"/>
         {
           showCart?

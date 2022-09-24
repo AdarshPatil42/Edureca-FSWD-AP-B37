@@ -6,8 +6,8 @@ const cors = require("cors");
 
 // create server
 const server = express();
-
-server.listen(4000);
+const PORT = process.env.PORT || 4000;
+server.listen(PORT);
 server.use(cors());
 server.use(express.json());
 
@@ -18,9 +18,15 @@ mongodb.localconnect();
 server.use(bodyParser.json());
 server.use("/api/user", userRouter);
 
+
+
+// step for heroku deployment
+if(process.env.NODE_ENV = "production"){
+    server.use(express.static("mistore-frontend/build"));
+}
+
 // create default response
 server.get("/", (req, res)=>{
     res.end("Hello world");
 });
-
 console.log("server is listening on 4000");

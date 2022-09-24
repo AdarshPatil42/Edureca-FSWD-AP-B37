@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "../styles/Signup.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import socialimg from '../img/social-0.jpg';
+import miLogo from '../img/logo.jpg';
 
 
 
@@ -11,18 +12,15 @@ function Signup() {
     const [name,setName]=useState("");
     const [password,setPassword]=useState("");
     const [email,setEmail]=useState("");
-    
 
     async function register(event){
         event.preventDefault();
 
-        
         const result = await fetch("http://localhost:4000/api/user/signup",{
             method:"POST",
             body:JSON.stringify({name,email,password}),
             headers:{
                 "Content-Type":'application/json'
-                // "Accept":'application/json'
             }
         })
         const data = await result.json();
@@ -46,7 +44,7 @@ function Signup() {
         
         <form onSubmit={register}>
             <div className='heading mb-3'>
-            <img id='mi_logo' src="https://mk0bfsieletsonlt96u6.kinstacdn.com/wp-content/uploads/2018/05/mi-logo-e1527492959558.png" alt='logo'></img>    
+            <img id='mi_logo' src={miLogo} alt='logo'></img>    
             
             <h1 >Mi Account</h1>
             </div>

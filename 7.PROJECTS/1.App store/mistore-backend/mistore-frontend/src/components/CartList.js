@@ -4,27 +4,27 @@ import "../styles/StarProduct.css";
 
 function CartList({cart}){
     const [CART, setCART]= useState([]);
-    const [price, setPrice]= useState(0);
+    // const [price, setPrice]= useState(0);
 
     useEffect(()=>{
         setCART(cart);
     },[cart]);
 
     const handleRemove = (id)=>{
-        const arr = cart.filter((cartItem)=>cartItem.id !==id);
+        const arr = cart.filter((cartItem)=>cartItem.id !==id );
         setCART(arr);
-        handlePrice();
+        // handlePrice();
     }
 
-    const handlePrice = ()=>{
-        let ans =0;
-        cart.map((cartItem)=>(ans+= cartItem.amount * cartItem.price));
-        setPrice(ans);
-    };
+    // const handlePrice = ()=>{
+    //     let ans =0;
+    //     cart.map((cartItem)=>(ans+= cartItem.amount * cartItem.price));
+    //     setPrice(ans);
+    // };
 
-    useEffect(()=>{
-        handlePrice();
-    });
+    // useEffect(()=>{
+    //     handlePrice();
+    // });
 
     return (
         <div className='h-100 cartBody'>
@@ -56,7 +56,6 @@ function CartList({cart}){
                             }}> + </button>
                             </div>
                             <span> ₹ {cartItem.price * cartItem.quantity} /-</span>
-                            {/* <span ><i className='fa-solid fa-trash' ></i></span> */}
                             <button className='btn-danger' onClick={()=> handleRemove(cartItem.id)}>X</button>
                             
                         </div>

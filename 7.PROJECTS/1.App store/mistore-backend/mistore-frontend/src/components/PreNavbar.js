@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "../styles/PreNavbar.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import moment from 'moment';
 
 
 
@@ -21,7 +22,12 @@ function PreNavbar(props) {
                 <NavLink  to="/signup" >SIGN UP</NavLink> <span>|</span> 
                 <NavLink  to="/signin" >SIGN IN</NavLink> <span>|</span>
                 <NavLink  to="" onClick={()=>props.handleShow(true)}>{cartIcon}  CART <sup className='sup'>{props.count}</sup></NavLink> <span>|</span>
-                <NavLink  to="/" onClick={()=>props.handleShow(false)}><i class="zmdi zmdi-home zmdi-hc-3x"></i></NavLink> 
+                <NavLink  to="/" onClick={()=>props.handleShow(false)}><i class="zmdi zmdi-home zmdi-hc-3x"></i></NavLink>
+                <div className='date_time'>
+                    {moment().format('Do  MMM YY')}
+                        <br></br>
+                    {moment().format('h:mm:ss a')}
+                </div>
             </div>
         </div>
     )
