@@ -24,6 +24,7 @@ function App() {
 
   const [cart, setCart]= useState([]);
   const [showCart, setShowCart]= useState(false);
+  
     const addTOCart = (data)=>{
         setCart([...cart, {...data, quantity:1}]);
     }
