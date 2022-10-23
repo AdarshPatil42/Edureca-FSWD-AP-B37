@@ -1,0 +1,61 @@
+.heading{
+    background-color:chartreuse;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+.body{
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+}
+.date{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    text-align: center;
+    margin-top: 50px;
+}
+.listheading{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(39, 129, 247);
+    font-size: 25px;
+    font-weight: bold;
+}
+.carlist{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(108, 240, 196);
+    font-weight: bold;
+    
+
+}
+.list{
+    background-color:rgb(54, 242, 142);
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.listpara{
+    font-size: 25px;
+    font-weight: bold;
+}
+.removebtn{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(248, 105, 240);
+}
+.removebtn:hover{
+    color: red;
+}
+.element{
+    width: 25vh;
+    text-align: center;
+}
