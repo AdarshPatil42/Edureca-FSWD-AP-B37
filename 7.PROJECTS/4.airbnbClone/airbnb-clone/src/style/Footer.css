@@ -1,0 +1,26 @@
+.Last_btn{
+    height: 50px;
+    width: 150px;
+    color: white;
+    margin: 50px auto;
+    font-weight: bold;
+    background-color: rgb(57, 57, 57);
+    border-radius: 5px;
+}
+.Last_btn:hover{
+    background-color: black;
+}
+.footer{
+    height: 40vh;
+    background-color: rgb(222, 222, 222);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+.last_p{
+    height: 200px;
+    width: 300px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+}

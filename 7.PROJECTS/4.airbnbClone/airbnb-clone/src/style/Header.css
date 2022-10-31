@@ -1,0 +1,178 @@
+/* Css for Header component */
+*{
+    font-family:  Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+.header{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_img{
+    height: 70px;
+}
+.header_center{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    border: 1px solid rgb(229,229,229);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 5px;
+    margin: auto 0;
+}
+.header_center:hover{
+    box-shadow: 0px 3px 10px rgba(53, 53, 53, 0.363);
+}
+.header_center_p{
+    border-right: 1px solid rgb(229,229,229);
+    padding: 5px;
+}
+.search_icon{
+    height: 30px;
+    width: 30px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(244, 97, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+}
+.header_right_div1{
+    height: 40px;
+    width: 120px; 
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.header_right_div1:hover{
+    background-color:rgb(229,229,229);
+}
+.header_right_div1_p2{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+}
+.header_right_div1_p2:hover{
+    background-color: gainsboro;
+}
+.btn{
+    width: 70px;
+    height: 40px;
+    border-color:rgb(229,229,229) ;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.men_btn{
+    background-color: white;
+    border: none;
+    display: none;
+}
+.btn:hover{
+    box-shadow: 0px 3px 10px rgba(53, 53, 53, 0.363);
+}
+.header_border{
+    background-color:rgb(229,229,229);
+    height: 1px;
+    /* width: 100%; */
+}
+.menu{
+    width: 12%;
+    height: 14vh;
+    float: right;
+    background-color: rgb(254, 253, 246);
+    position: absolute;
+    margin-left: 1140px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(53, 53, 53, 0.363);
+}
+.li{
+    list-style: none;
+    width: 100%;
+    padding: 3px;
+    margin-left: -20px;
+    text-align: center;
+    color: rgb(126, 125, 125);
+    border-radius: 5px;
+}
+.li:hover{
+    background-color: rgb(223, 239, 245);
+    color: rgb(68, 67, 67);
+}
+#check{
+    display: none;
+}
+
+/* Css for Heading component */
+
+
+@media(max-width:960px){
+    .header{
+        display: flex;
+        /* height: 300px; */
+    }
+    .header_center{
+        display: none;
+    }
+    .header_right{
+        display: none;
+    }
+    /* .header_center{
+        display: block;
+        border: none;
+        position: fixed;
+        left: -100%;
+    }
+    
+    .header_center:hover{
+        box-shadow:none;
+    }
+    .search_icon{
+        display: none;
+    }
+    .header_right{
+        display: block;
+        position: fixed;
+        left: -100%;
+        margin-top: 60px;
+    }
+    #check:checked ~ .header_center{
+        left: 100%;
+        
+    }
+    .header_center_p{
+        border-right: none;
+    }
+    .header_right_div1_p{
+        display: none;
+    }
+    .header_right_div1_p2{
+        display: none;
+    } */
+    .men_btn{
+        display: block;
+        margin-top: 25px;
+    }
+}
