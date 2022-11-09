@@ -7,7 +7,7 @@ import axios from "axios";
 import { NavLink } from "react-router-dom"
 
 
-
+// Home page
 
 const Home = () => {
   const [students, setStudents] = useState([]);
@@ -63,7 +63,6 @@ const Home = () => {
   }
 
   return (
-
     <>
       <div className='container-fluid border border-secondary  py-3 '>
         <div className='d-flex justify-content-center bg-success mb-1 text-white'>

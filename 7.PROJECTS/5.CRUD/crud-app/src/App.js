@@ -3,7 +3,7 @@ import Home from "./components/pages/Home.js";
 import View from "./components/pages/View.js";
 import Edit from "./components/pages/Edit.js";
 
-
+// App
 function App() {
   return (
     <>

@@ -3,7 +3,7 @@ import { Button, Form, FloatingLabel, Col, Row } from 'react-bootstrap';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-
+// edit page
 const Edit = () => {
   const { id } = useParams();
   const navigate = useNavigate();

@@ -4,7 +4,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-
+// view page
 
 const View = () => {
   const { id } = useParams();
