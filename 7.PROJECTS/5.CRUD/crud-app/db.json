@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "stu_name": "Bharat Patil",
+      "email": "bharat.patil@demo.com"
+    },
+    {
+      "id": 2,
+      "stu_name": "Sai Tamankar",
+      "email": "sai123@demo.com"
+    },
+    {
+      "id": 3,
+      "stu_name": "karan kumar",
+      "email": "karandj@demo.com"
+    },
+    {
+      "id": 4,
+      "stu_name": "Gautami Patil",
+      "email": "gautami@demo.com"
+    },
+    {
+      "stu_name": "Raju bhai",
+      "email": "raju@demo.com",
+      "id": 14
+    },
+    {
+      "stu_name": "Suraj",
+      "email": "suraj@demo.com",
+      "id": 15
+    }
+  ]
+}
