@@ -2,11 +2,11 @@
 
 // Q(1) Reverse string
 
-const str = "Hello World";
+// const str = "Hello World";
 
-const reverseStr = str.split("").reverse().join("");
+// const reverseStr = str.split("").reverse().join("");
 
-console.log(reverseStr);
+// console.log(reverseStr);
 
 // --------------------xxxxxxxxxxxxxxxxxxxx----------------------
 
@@ -43,7 +43,7 @@ console.log(reverseStr);
 
 // --------------------xxxxxxxxxxxxxxxxxxxx----------------------
 
-// Q(4) Find missing Number from 1 to 100
+// Q(4) Find Duplicate Number from 1 to 100
 
 // const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23,
 //     24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47,
@@ -53,17 +53,17 @@ console.log(reverseStr);
 
 // function findDuplicateNum(arr){
 //     let sortArr = arr.sort((a,b)=> a-b);
-//     console.log(sortArr)
 //     let duplicateNum = [];
 //     for(let i =0; i<sortArr.length; i++){
 //         if(sortArr[i+1]==sortArr[i]){
 //             duplicateNum.push(sortArr[i]);
 //         }
 //     }
-//     console.log(duplicateNum);
+//     return duplicateNum;
 // }
 
-// findDuplicateNum(numbers);
+// const result = findDuplicateNum(numbers);
+// console.log(result);
 
 // --------------------xxxxxxxxxxxxxxxxxxxx----------------------
 
