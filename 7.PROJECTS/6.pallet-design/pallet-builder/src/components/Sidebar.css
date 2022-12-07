@@ -1,0 +1,32 @@
+/* .main-container{
+    width: 100%;
+    display: flex;
+
+} */
+.sidebar{
+    background-color: rgb(17,46,81);
+    height: 100vh;
+    display: block;
+    text-align: center;
+}
+.pally-logo{
+    width: 90%;
+}
+.menu-logo{
+    margin-top: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+}
+
+.layer-logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 12vh;
+}
+.version{
+    color: white;
+    margin-top: 40vh;
+}

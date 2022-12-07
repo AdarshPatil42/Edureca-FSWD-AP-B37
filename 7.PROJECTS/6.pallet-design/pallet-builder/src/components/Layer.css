@@ -1,0 +1,36 @@
+.Layer-menu{
+    width: 100%;
+    display: flex;
+}
+.menu-bar{
+    width: 10%;
+    height: 100vh;
+    display: block;
+    text-align: center;
+    border-right: 2px solid rgb(235,235,235);
+}
+.menu-heading{
+    height: 25vh;
+}
+.menu-symbol{
+    height: 70%;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.symbols{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.symbols:hover{
+    color: inherit;
+    background-color: rgb(241,241,241);
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
